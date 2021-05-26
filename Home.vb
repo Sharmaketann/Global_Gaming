@@ -36,6 +36,10 @@
         Panel2.Controls.Add(IndividualList)
         IndividualList.Show()
         Player.Hide()
+        Desktop.Hide()
+        Intercolliegate.Hide()
+        SearchList.Hide()
+        TeamList.Hide()
 
     End Sub
 
@@ -45,6 +49,10 @@
         Panel2.Controls.Add(TeamList)
         TeamList.Show()
         Player.Hide()
+        Desktop.Hide()
+        IndividualList.Hide()
+        SearchList.Hide()
+        Intercolliegate.Hide()
     End Sub
 
     Private Sub RegistrationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrationToolStripMenuItem.Click
@@ -55,7 +63,9 @@
         Player.Show()
         IndividualList.Hide()
         Desktop.Hide()
-        Desktopscoreboard.Hide()
+        Teamscoreboard.Hide()
+        Intercolliegate.Hide()
+        SearchList.Hide()
     End Sub
 
     Private Sub SearchListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SearchListToolStripMenuItem.Click
@@ -67,6 +77,8 @@
         TeamList.Hide()
         Player.Hide()
         Desktop.Hide()
+        Intercolliegate.Hide()
+
     End Sub
 
     Private Sub DesktopToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DesktopToolStripMenuItem.Click
@@ -78,16 +90,62 @@
         IndividualList.Hide()
         Player.Hide()
         TeamList.Hide()
+
     End Sub
 
-    Private Sub DesktopToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles DesktopToolStripMenuItem1.Click
-        Desktopscoreboard.TopLevel = False
-        Desktopscoreboard.TopMost = True
-        Panel2.Controls.Add(Desktopscoreboard)
-        Desktopscoreboard.Show()
+
+
+
+
+    Private Sub IntercolliegateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IntercolliegateToolStripMenuItem.Click
+        Intercolliegate.TopLevel = False
+        Intercolliegate.TopMost = True
+        Panel2.Controls.Add(Intercolliegate)
+        Intercolliegate.Show()
+        Desktop.Hide()
+        Player.Hide()
+        TeamList.Hide()
+        SearchList.Hide()
+        Teamscoreboard.Hide()
+    End Sub
+
+    Private Sub LogoutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogoutToolStripMenuItem.Click
+        Me.Close()
+        Login.Show()
+    End Sub
+
+    Private Sub TeamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TeamToolStripMenuItem.Click
+        Teamscoreboard.TopLevel = False
+        Teamscoreboard.TopMost = True
+        Panel2.Controls.Add(Teamscoreboard)
+        Teamscoreboard.Show()
         Desktop.Hide()
         IndividualList.Hide()
         Player.Hide()
         TeamList.Hide()
+        SearchList.Hide()
+        Intercolliegate.Hide()
+    End Sub
+
+    Private Sub IndividualToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IndividualToolStripMenuItem.Click
+        IndividualScoreboard.TopLevel = False
+        IndividualScoreboard.TopMost = True
+        Panel2.Controls.Add(IndividualScoreboard)
+        IndividualScoreboard.Show()
+        Teamscoreboard.Hide()
+        Desktop.Hide()
+        IndividualList.Hide()
+        TeamList.Hide()
+        SearchList.Hide()
+        Player.Hide()
+        Intercolliegate.Hide()
+
+    End Sub
+
+    Private Sub DataReportToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DataReportToolStripMenuItem.Click
+        Playerreport.TopLevel = False
+        Playerreport.TopMost = True
+        Panel2.Controls.Add(Playerreport)
+        Playerreport.Show()
     End Sub
 End Class

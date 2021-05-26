@@ -41,8 +41,7 @@ Public Class SearchList
     End Sub
 
     Private Sub SearchList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'GlobalDataSet1.Individual' table. You can move, or remove it, as needed.
-        Me.IndividualTableAdapter.Fill(Me.GlobalDataSet1.Individual)
+
         Combo1()
         Display()
         Display1()

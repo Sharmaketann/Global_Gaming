@@ -23,6 +23,7 @@ Partial Class IndividualList
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(IndividualList))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -41,6 +42,7 @@ Partial Class IndividualList
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -48,7 +50,6 @@ Partial Class IndividualList
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -57,11 +58,13 @@ Partial Class IndividualList
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IndividualBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GlobalDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -97,9 +100,9 @@ Partial Class IndividualList
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.NameDataGridViewTextBoxColumn, Me.GNameDataGridViewTextBoxColumn, Me.CollegeDataGridViewTextBoxColumn, Me.CityDataGridViewTextBoxColumn, Me.EmailDataGridViewTextBoxColumn, Me.GTypeDataGridViewTextBoxColumn, Me.GameDataGridViewTextBoxColumn, Me.ImageDataGridViewImageColumn})
         Me.DataGridView1.DataSource = Me.IndividualBindingSource
         Me.DataGridView1.GridColor = System.Drawing.Color.Chocolate
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 594)
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 696)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1422, 210)
+        Me.DataGridView1.Size = New System.Drawing.Size(1422, 108)
         Me.DataGridView1.TabIndex = 2
         '
         'IDDataGridViewTextBoxColumn
@@ -194,13 +197,11 @@ Partial Class IndividualList
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TableLayoutPanel1.ColumnCount = 4
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.04622!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.95377!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 147.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 503.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.22727!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.77273!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 144.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 420.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label9, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 1)
@@ -224,15 +225,26 @@ Partial Class IndividualList
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1300, 338)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1025, 338)
         Me.TableLayoutPanel1.TabIndex = 14
+        '
+        'Label9
+        '
+        Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(3, 280)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(80, 28)
+        Me.Label9.TabIndex = 29
+        Me.Label9.Text = "College:"
         '
         'Label2
         '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(102, 26)
+        Me.Label2.Location = New System.Drawing.Point(3, 26)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(90, 28)
         Me.Label2.TabIndex = 22
@@ -240,10 +252,10 @@ Partial Class IndividualList
         '
         'Label3
         '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(69, 107)
+        Me.Label3.Location = New System.Drawing.Point(3, 107)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(123, 28)
         Me.Label3.TabIndex = 23
@@ -251,10 +263,10 @@ Partial Class IndividualList
         '
         'Label4
         '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(56, 192)
+        Me.Label4.Location = New System.Drawing.Point(3, 192)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(136, 28)
         Me.Label4.TabIndex = 24
@@ -262,10 +274,10 @@ Partial Class IndividualList
         '
         'Label5
         '
-        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(743, 26)
+        Me.Label5.Location = New System.Drawing.Point(463, 26)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(50, 28)
         Me.Label5.TabIndex = 25
@@ -273,10 +285,10 @@ Partial Class IndividualList
         '
         'Label6
         '
-        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(709, 107)
+        Me.Label6.Location = New System.Drawing.Point(463, 107)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(84, 28)
         Me.Label6.TabIndex = 26
@@ -284,10 +296,10 @@ Partial Class IndividualList
         '
         'Label7
         '
-        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(683, 192)
+        Me.Label7.Location = New System.Drawing.Point(463, 192)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(110, 28)
         Me.Label7.TabIndex = 27
@@ -295,111 +307,113 @@ Partial Class IndividualList
         '
         'Label8
         '
-        Me.Label8.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label8.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(726, 280)
+        Me.Label8.Location = New System.Drawing.Point(463, 280)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(67, 28)
         Me.Label8.TabIndex = 28
         Me.Label8.Text = "Game:"
         '
-        'Label9
-        '
-        Me.Label9.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(112, 280)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(80, 28)
-        Me.Label9.TabIndex = 29
-        Me.Label9.Text = "College:"
-        '
         'Label10
         '
-        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Montserrat Medium", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(422, 27)
+        Me.Label10.Location = New System.Drawing.Point(165, 27)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(0, 26)
         Me.Label10.TabIndex = 30
         '
         'Label11
         '
-        Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Montserrat Medium", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(422, 108)
+        Me.Label11.Location = New System.Drawing.Point(165, 108)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(0, 26)
         Me.Label11.TabIndex = 31
         '
         'Label12
         '
-        Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Montserrat Medium", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(422, 193)
+        Me.Label12.Location = New System.Drawing.Point(165, 193)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(0, 26)
         Me.Label12.TabIndex = 32
         '
         'Label13
         '
-        Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Montserrat Medium", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(422, 281)
+        Me.Label13.Location = New System.Drawing.Point(165, 281)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(0, 26)
         Me.Label13.TabIndex = 33
         '
         'Label14
         '
-        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Montserrat Medium", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(1048, 27)
+        Me.Label14.Location = New System.Drawing.Point(607, 27)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(0, 26)
         Me.Label14.TabIndex = 34
         '
         'Label15
         '
-        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Montserrat Medium", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(1048, 108)
+        Me.Label15.Location = New System.Drawing.Point(607, 108)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(0, 26)
         Me.Label15.TabIndex = 35
         '
         'Label16
         '
-        Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Montserrat", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(1048, 193)
+        Me.Label16.Location = New System.Drawing.Point(607, 193)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(0, 26)
         Me.Label16.TabIndex = 36
         '
         'Label17
         '
-        Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Montserrat", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(1048, 281)
+        Me.Label17.Location = New System.Drawing.Point(607, 281)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(0, 26)
         Me.Label17.TabIndex = 37
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(1163, 261)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(258, 280)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabStop = False
         '
         'IndividualList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1422, 804)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.TableLayoutPanel1)
@@ -417,6 +431,7 @@ Partial Class IndividualList
         CType(Me.GlobalDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -456,4 +471,5 @@ Partial Class IndividualList
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -9,6 +9,11 @@ Public Class TeamList
     Dim datareader As SqlDataReader
 
     Private Sub TeamList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        connection = New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=Global;Integrated Security=True")
+        dataadapter = New SqlDataAdapter("select * from Teaminfo", connection)
+        dataset = New DataSet
+        dataadapter.Fill(dataset)
+        DataGridView1.DataSource = dataset.Tables(0)
         TableLayoutPanel1.Visible = False
     End Sub
 
@@ -22,14 +27,17 @@ Public Class TeamList
         datareader = Command.ExecuteReader
         datareader.Read()
         'Read all the data from the database and show it in the textbox
-        Label10.Text = datareader("ID")
-        Label12.Text = datareader("Name")
-        Label14.Text = datareader("Coach")
-        Label16.Text = datareader("College")
-        Label11.Text = datareader("City")
-        Label13.Text = datareader("Email")
-        Label15.Text = datareader("GType")
-        Label17.Text = datareader("Game")
-        connection.Close()
+        Try
+            Label10.Text = datareader("ID")
+            Label12.Text = datareader("Name")
+            Label14.Text = datareader("Coach")
+            Label16.Text = datareader("College")
+            Label11.Text = datareader("City")
+            Label13.Text = datareader("Email")
+            Label15.Text = datareader("GType")
+            Label17.Text = datareader("Game")
+            connection.Close()
+        Catch dr As Exception
+        End Try
     End Sub
 End Class

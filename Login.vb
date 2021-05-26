@@ -8,14 +8,8 @@
         If Timer1.Interval = 10000 Then
             Panel1.Visible = False
             Panel3.Visible = True
-        ElseIf Timer1.Interval = 20000 Then
-            Panel3.Visible = False
+        Else
             Panel1.Visible = True
-        ElseIf Timer1.Interval = 30000 Then
-            Panel3.Visible = True
-            Panel1.Visible = False
-        ElseIf Timer1.Interval = 40000 Then
-            Panel3.Visible = False
         End If
 
     End Sub
@@ -30,7 +24,6 @@
             Label15.Text = "Logged In Successfully"
             Me.Hide()
             Home.ShowDialog()
-            Me.Close()
         Else
             Label15.Text = "Incorrect Credentials"
         End If

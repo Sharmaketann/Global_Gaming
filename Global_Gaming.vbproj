@@ -48,10 +48,17 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -73,16 +80,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Desktop.Designer.vb">
       <DependentUpon>Desktop.vb</DependentUpon>
     </Compile>
     <Compile Include="Desktop.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Desktopscoreboard.Designer.vb">
-      <DependentUpon>Desktopscoreboard.vb</DependentUpon>
+    <Compile Include="IndividualScoreboard.Designer.vb">
+      <DependentUpon>IndividualScoreboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="Desktopscoreboard.vb">
+    <Compile Include="IndividualScoreboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playerreport.Designer.vb">
+      <DependentUpon>Playerreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Playerreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teamscoreboard.Designer.vb">
+      <DependentUpon>Teamscoreboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Teamscoreboard.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -102,10 +127,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GlobalDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="GlobalDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="IndividualList.Designer.vb">
       <DependentUpon>IndividualList.vb</DependentUpon>
     </Compile>
     <Compile Include="IndividualList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intercolliegate.Designer.vb">
+      <DependentUpon>Intercolliegate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Intercolliegate.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
@@ -156,17 +192,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Desktop.resx">
       <DependentUpon>Desktop.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Desktopscoreboard.resx">
-      <DependentUpon>Desktopscoreboard.vb</DependentUpon>
+    <EmbeddedResource Include="IndividualScoreboard.resx">
+      <DependentUpon>IndividualScoreboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playerreport.resx">
+      <DependentUpon>Playerreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teamscoreboard.resx">
+      <DependentUpon>Teamscoreboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IndividualList.resx">
       <DependentUpon>IndividualList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intercolliegate.resx">
+      <DependentUpon>Intercolliegate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -213,6 +262,17 @@
     <None Include="GlobalDataSet1.xss">
       <DependentUpon>GlobalDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="GlobalDataSet2.xsc">
+      <DependentUpon>GlobalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="GlobalDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GlobalDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GlobalDataSet2.xss">
+      <DependentUpon>GlobalDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -230,8 +290,17 @@
   <ItemGroup>
     <Content Include="Resources\chess.jpg" />
     <Content Include="Resources\console.jpg" />
+    <None Include="Resources\toppng.com-layerunknowns-battlegrounds-png-pubg-png-battlegrounds-916x757.png" />
+    <None Include="Resources\toppng.com-image-result-for-messi-png-messi-barcelona-messi-png-2018-916x1598.png" />
+    <None Include="Resources\toppng.com-dota-2-logo-400x300.png" />
+    <None Include="Resources\toppng.com-chess-1100x984.png" />
+    <None Include="Resources\dota.bmp" />
+    <None Include="Resources\download.jpg" />
     <Content Include="Resources\feather.jpg" />
     <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
