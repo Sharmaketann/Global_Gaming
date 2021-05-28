@@ -79,6 +79,7 @@ Partial Class Playerreport
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1444, 701)
         Me.CrystalReportViewer1.TabIndex = 12
+        Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'Playerreport
         '

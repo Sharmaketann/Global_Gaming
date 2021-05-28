@@ -41,3 +41,4 @@ C:\Users\admin\source\repos\Global_Gaming\bin\Debug\stdole.dll
 C:\Users\admin\source\repos\Global_Gaming\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\admin\source\repos\Global_Gaming\obj\Debug\Global_Gaming.Playerreport.resources
 C:\Users\admin\source\repos\Global_Gaming\obj\Debug\Global_Gaming.vbproj.CopyComplete
+C:\Users\admin\source\repos\Global_Gaming\obj\Debug\Global_Gaming.Teamreport.resources

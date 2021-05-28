@@ -45,9 +45,6 @@ Partial Class TeamList
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.GlobalDataSet2 = New Global_Gaming.GlobalDataSet2()
-        Me.TeaminfoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TeaminfoTableAdapter = New Global_Gaming.GlobalDataSet2TableAdapters.TeaminfoTableAdapter()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CoachDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,11 +54,14 @@ Partial Class TeamList
         Me.GtypeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ImageDataGridViewImageColumn = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.TeaminfoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GlobalDataSet2 = New Global_Gaming.GlobalDataSet2()
+        Me.TeaminfoTableAdapter = New Global_Gaming.GlobalDataSet2TableAdapters.TeaminfoTableAdapter()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GlobalDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TeaminfoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GlobalDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -90,7 +90,7 @@ Partial Class TeamList
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.26756!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.73244!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 380.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 381.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Label17, 3, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Label16, 1, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Label15, 3, 2)
@@ -122,9 +122,9 @@ Partial Class TeamList
         Me.Label17.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(648, 325)
+        Me.Label17.Location = New System.Drawing.Point(647, 325)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(375, 22)
+        Me.Label17.Size = New System.Drawing.Size(376, 22)
         Me.Label17.TabIndex = 15
         Me.Label17.Text = "Team ID:"
         '
@@ -135,7 +135,7 @@ Partial Class TeamList
         Me.Label16.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.Location = New System.Drawing.Point(152, 325)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(339, 22)
+        Me.Label16.Size = New System.Drawing.Size(338, 22)
         Me.Label16.TabIndex = 14
         Me.Label16.Text = "Team ID:"
         '
@@ -144,9 +144,9 @@ Partial Class TeamList
         Me.Label15.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(648, 224)
+        Me.Label15.Location = New System.Drawing.Point(647, 224)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(375, 22)
+        Me.Label15.Size = New System.Drawing.Size(376, 22)
         Me.Label15.TabIndex = 13
         Me.Label15.Text = "Team ID:"
         '
@@ -157,7 +157,7 @@ Partial Class TeamList
         Me.Label14.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(152, 224)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(339, 22)
+        Me.Label14.Size = New System.Drawing.Size(338, 22)
         Me.Label14.TabIndex = 12
         Me.Label14.Text = "Team ID:"
         '
@@ -166,9 +166,9 @@ Partial Class TeamList
         Me.Label13.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(648, 127)
+        Me.Label13.Location = New System.Drawing.Point(647, 127)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(375, 22)
+        Me.Label13.Size = New System.Drawing.Size(376, 22)
         Me.Label13.TabIndex = 11
         Me.Label13.Text = "Team ID:"
         '
@@ -179,7 +179,7 @@ Partial Class TeamList
         Me.Label12.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(152, 127)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(339, 22)
+        Me.Label12.Size = New System.Drawing.Size(338, 22)
         Me.Label12.TabIndex = 10
         Me.Label12.Text = "Team ID:"
         '
@@ -188,9 +188,9 @@ Partial Class TeamList
         Me.Label11.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(648, 35)
+        Me.Label11.Location = New System.Drawing.Point(647, 35)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(375, 22)
+        Me.Label11.Size = New System.Drawing.Size(376, 22)
         Me.Label11.TabIndex = 9
         Me.Label11.Text = "Team ID:"
         '
@@ -201,7 +201,7 @@ Partial Class TeamList
         Me.Label10.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(152, 35)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(339, 22)
+        Me.Label10.Size = New System.Drawing.Size(338, 22)
         Me.Label10.TabIndex = 8
         Me.Label10.Text = "Team ID:"
         '
@@ -254,7 +254,7 @@ Partial Class TeamList
         Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(497, 34)
+        Me.Label6.Location = New System.Drawing.Point(496, 34)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(145, 23)
         Me.Label6.TabIndex = 4
@@ -265,7 +265,7 @@ Partial Class TeamList
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(497, 126)
+        Me.Label7.Location = New System.Drawing.Point(496, 126)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(145, 23)
         Me.Label7.TabIndex = 5
@@ -276,7 +276,7 @@ Partial Class TeamList
         Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(497, 224)
+        Me.Label8.Location = New System.Drawing.Point(496, 224)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(145, 23)
         Me.Label8.TabIndex = 6
@@ -287,7 +287,7 @@ Partial Class TeamList
         Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(497, 325)
+        Me.Label9.Location = New System.Drawing.Point(496, 325)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(145, 23)
         Me.Label9.TabIndex = 7
@@ -329,20 +329,6 @@ Partial Class TeamList
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(1440, 150)
         Me.DataGridView1.TabIndex = 15
-        '
-        'GlobalDataSet2
-        '
-        Me.GlobalDataSet2.DataSetName = "GlobalDataSet2"
-        Me.GlobalDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'TeaminfoBindingSource
-        '
-        Me.TeaminfoBindingSource.DataMember = "Teaminfo"
-        Me.TeaminfoBindingSource.DataSource = Me.GlobalDataSet2
-        '
-        'TeaminfoTableAdapter
-        '
-        Me.TeaminfoTableAdapter.ClearBeforeFill = True
         '
         'IDDataGridViewTextBoxColumn
         '
@@ -398,6 +384,20 @@ Partial Class TeamList
         Me.ImageDataGridViewImageColumn.HeaderText = "Image"
         Me.ImageDataGridViewImageColumn.Name = "ImageDataGridViewImageColumn"
         '
+        'TeaminfoBindingSource
+        '
+        Me.TeaminfoBindingSource.DataMember = "Teaminfo"
+        Me.TeaminfoBindingSource.DataSource = Me.GlobalDataSet2
+        '
+        'GlobalDataSet2
+        '
+        Me.GlobalDataSet2.DataSetName = "GlobalDataSet2"
+        Me.GlobalDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TeaminfoTableAdapter
+        '
+        Me.TeaminfoTableAdapter.ClearBeforeFill = True
+        '
         'TeamList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -410,14 +410,16 @@ Partial Class TeamList
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "TeamList"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TeamList"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GlobalDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TeaminfoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GlobalDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
