@@ -59,9 +59,9 @@ Partial Class Teamscoreboard
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackColor = System.Drawing.Color.DarkRed
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(12, 12)
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1487, 100)
         Me.Panel1.TabIndex = 1
@@ -71,6 +71,7 @@ Partial Class Teamscoreboard
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Poppins", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label1.Location = New System.Drawing.Point(534, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(440, 48)
@@ -343,7 +344,7 @@ Partial Class Teamscoreboard
         Me.TableLayoutPanel1.Controls.Add(Me.Button4, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Button2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Button3, 0, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(970, 172)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(963, 150)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -351,7 +352,6 @@ Partial Class Teamscoreboard
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(227, 504)
         Me.TableLayoutPanel1.TabIndex = 7
         '

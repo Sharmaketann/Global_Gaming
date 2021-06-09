@@ -1,6 +1,8 @@
 ﻿'Packages Imported
 Imports System.Data.SqlClient
 Imports System.IO
+Imports System.Text.RegularExpressions
+
 Public Class Player
 
     ' Variables declared for SqlConnection
@@ -150,18 +152,24 @@ Public Class Player
         datareader = command.ExecuteReader
         datareader.Read()
         'Read all the data from the database and show it in the textbox
-        TextBox2.Text = datareader("Name")
-        TextBox3.Text = datareader("GName")
-        TextBox4.Text = datareader("College")
-        TextBox5.Text = datareader("City")
-        TextBox6.Text = datareader("Email")
-        ComboBox1.Text = datareader("GType")
-        ComboBox2.Text = datareader("Game")
-        connection.Close()
+        Try
+            TextBox2.Text = datareader("Name")
+            TextBox3.Text = datareader("GName")
+            TextBox4.Text = datareader("College")
+            TextBox5.Text = datareader("City")
+            TextBox6.Text = datareader("Email")
+            ComboBox1.Text = datareader("GType")
+            ComboBox2.Text = datareader("Game")
+            connection.Close()
+        Catch dr As Exception
+            MsgBox("Record not found")
+        End Try
 
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+
         'Sql connection
         connection = New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=Global;Integrated Security=True")
         connection.Open()
@@ -180,6 +188,52 @@ Public Class Player
         command.Parameters.Add("@image", SqlDbType.Image).Value = ms.ToArray()
         command.ExecuteNonQuery()
         MsgBox("Successful")
+        connection.Close()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        connection = New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=Global;Integrated Security=True")
+        connection.Open()
+        Dim strsql As String
+        strsql = "select * from Teaminfo where ID = " + TextBox7.Text + ""
+        command = New SqlCommand(strsql, connection)
+        datareader = command.ExecuteReader
+        datareader.Read()
+        'Read all the data from the database and show it in the textbox
+        Try
+            TextBox8.Text = datareader("Name")
+            TextBox9.Text = datareader("Coach")
+            TextBox10.Text = datareader("College")
+            TextBox11.Text = datareader("City")
+            TextBox12.Text = datareader("Email")
+            ComboBox3.Text = datareader("Gtype")
+            ComboBox4.Text = datareader("Game")
+            connection.Close()
+        Catch dr As Exception
+            MsgBox("Record not found")
+        End Try
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim u As String
+        u = TextBox7.Text
+        connection = New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=Global;Integrated Security=True")
+        connection.Open()
+        command = New SqlCommand("update Teaminfo set ID = " + TextBox7.Text + ",Name = '" + TextBox8.Text + "',Coach = '" + TextBox9.Text + "',College ='" + TextBox10.Text + "',City = '" + TextBox11.Text + "',Email = '" + TextBox12.Text + "',Gtype ='" + ComboBox3.Text + "',Game = '" + ComboBox4.Text + "'where ID = " + u + "", connection)
+        command.ExecuteNonQuery()
+        MsgBox("Records Updated", MsgBoxStyle.Information)
+        connection.Close()
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim x As String
+        x = InputBox("Enter Team Id to delete the record")
+        connection = New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=Global;Integrated Security=True")
+        connection.Open()
+        command = New SqlCommand("delete from Teaminfo where ID = " + x + "", connection)
+        command.ExecuteNonQuery()
+        MsgBox("Records Deleted")
+
         connection.Close()
     End Sub
 End Class

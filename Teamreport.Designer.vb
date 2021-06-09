@@ -33,9 +33,9 @@ Partial Class Teamreport
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackColor = System.Drawing.Color.Moccasin
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(4, 2)
+        Me.Panel1.Location = New System.Drawing.Point(6, 2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1402, 100)
         Me.Panel1.TabIndex = 11
@@ -45,6 +45,7 @@ Partial Class Teamreport
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Poppins", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Maroon
         Me.Label1.Location = New System.Drawing.Point(529, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(307, 48)
@@ -79,6 +80,7 @@ Partial Class Teamreport
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1419, 646)
         Me.CrystalReportViewer1.TabIndex = 13
+        Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'Teamreport
         '

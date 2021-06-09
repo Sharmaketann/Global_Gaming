@@ -36,10 +36,17 @@
         TeamList.Hide()
         Teamreport.Hide()
         Teamscoreboard.Hide()
+        Teamreport.Hide()
+        Playerreport.Hide()
         Panel2.Show()
         PictureBox3.Visible = True
         Panel7.Visible = True
+        Label13.Visible = True
+        Label16.Visible = True
+        Panel8.Visible = True
     End Sub
+
+    'Individual Player Search Section
 
     Private Sub IndiviualPlayerListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IndiviualPlayerListToolStripMenuItem.Click
         'Show the other form inside the panel of the MDI Form
@@ -56,6 +63,8 @@
         Panel7.Visible = False
     End Sub
 
+    'Team Applicatoin Player Search Section.
+
     Private Sub TeamApplicationListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TeamApplicationListToolStripMenuItem.Click
         TeamList.TopLevel = False
         TeamList.TopMost = True
@@ -68,7 +77,14 @@
         Intercolliegate.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
+        Panel8.Visible = False
     End Sub
+
+    'Individual Player and Team Application Registration Section
 
     Private Sub RegistrationToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegistrationToolStripMenuItem.Click
         'Show the other form inside the panel of the MDI Form
@@ -83,7 +99,14 @@
         SearchList.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
+        Panel8.Visible = False
     End Sub
+
+    'Search List based on GamesType and College.
 
     Private Sub SearchListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SearchListToolStripMenuItem.Click
         SearchList.TopLevel = False
@@ -99,6 +122,8 @@
         Panel7.Visible = False
     End Sub
 
+    'Tournament Entry Games Detail Section 
+
     Private Sub DesktopToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DesktopToolStripMenuItem.Click
         Desktop.TopLevel = False
         Desktop.TopMost = True
@@ -113,8 +138,7 @@
     End Sub
 
 
-
-
+    'View Tournament Section
 
     Private Sub IntercolliegateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IntercolliegateToolStripMenuItem.Click
         Intercolliegate.TopLevel = False
@@ -129,6 +153,8 @@
         PictureBox3.Visible = False
         Panel7.Visible = False
     End Sub
+
+    'Scoreboard Team Score Section
 
     Private Sub TeamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TeamToolStripMenuItem.Click
         Teamscoreboard.TopLevel = False
@@ -145,6 +171,8 @@
         Panel7.Visible = False
     End Sub
 
+    'Scoreboard Individual Score Section
+
     Private Sub IndividualToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IndividualToolStripMenuItem.Click
         IndividualScoreboard.TopLevel = False
         IndividualScoreboard.TopMost = True
@@ -157,10 +185,12 @@
         SearchList.Hide()
         Player.Hide()
         Intercolliegate.Hide()
+        IndividualStanding.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
     End Sub
 
+    'DataReport Individual Report Section
     Private Sub IndividualToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles IndividualToolStripMenuItem1.Click
         Playerreport.TopLevel = False
         Playerreport.TopMost = True
@@ -168,9 +198,14 @@
         Playerreport.Show()
         Teamreport.Hide()
         PictureBox3.Visible = False
-        Panel7.Visible = False
+        Panel7.Hide()
+        Label13.Visible = False
+        Label16.Visible = False
+        Panel8.Visible = False
+        Timer1.Stop()
     End Sub
 
+    'DataReport Team Report Section
     Private Sub TeamToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles TeamToolStripMenuItem1.Click
         Teamreport.TopLevel = False
         Teamreport.TopMost = True
@@ -182,6 +217,8 @@
         Label3.Visible = False
         Label4.Visible = False
         Button1.Visible = False
+        Panel7.Visible = False
+        Panel8.Visible = False
     End Sub
 
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -210,29 +247,39 @@
         TeamList.Hide()
         Teamreport.Hide()
         Teamscoreboard.Hide()
+        Scoreboardreport.Hide()
         Panel2.Show()
         PictureBox3.Visible = True
         Panel7.Visible = True
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        PlayerEntryInformationToolStripMenuItem.DropDown.Show()
+        Me.PlayerEntryInformationToolStripMenuItem.DropDown.Location = New System.Drawing.Point(4, 3)
         Panel3.Show()
         Timer1.Stop()
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TournamentGamesToolStripMenuItem.DropDown.Show()
+        Me.TournamentGamesToolStripMenuItem.DropDown.Location = New System.Drawing.Point(186, 3)
         Panel3.Hide()
         Panel4.Show()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ScoreboardToolStripMenuItem.DropDown.Show()
+        Me.ScoreboardToolStripMenuItem.DropDown.Location = New System.Drawing.Point(322, 3)
         Panel4.Hide()
         Panel5.Show()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        TournamentEntryToolStripMenuItem.DropDown.Show()
+        Me.TournamentEntryToolStripMenuItem.DropDown.Location = New System.Drawing.Point(444, 3)
         Panel5.Hide()
-        Panel6.show
+        Panel6.Show()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -240,16 +287,8 @@
         Timer1.Start()
     End Sub
 
-    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
-
-    End Sub
-
     Private Sub ScoreBoardToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ScoreBoardToolStripMenuItem1.Click
-        PictureBox3.Visible = False
-        Label2.Visible = False
-        Label3.Visible = False
-        Label4.Visible = False
-        Button1.Visible = False
+
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -258,6 +297,7 @@
         Else
             Panel7.Visible = True
         End If
+
     End Sub
 
 
@@ -271,5 +311,124 @@
         Label16.Text = Date.Now.ToString("H:mm:ss")
     End Sub
 
+    Private Sub TournamentGamesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TournamentGamesToolStripMenuItem.Click
 
+    End Sub
+
+    'Scoreboard/ Individual Scoreboard Section
+
+    Private Sub IndividualToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles IndividualToolStripMenuItem2.Click
+        Scoreboardreport.TopLevel = False
+        Scoreboardreport.TopMost = True
+        Panel2.Controls.Add(Scoreboardreport)
+        Scoreboardreport.Show()
+        PictureBox3.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
+        Teamscoreboard.Hide()
+        Teamreport.Hide()
+        TeamList.Hide()
+        SearchList.Hide()
+        Playerreport.Hide()
+        Player.Hide()
+        Intercolliegate.Hide()
+        IndividualScoreboard.Hide()
+        IndividualList.Hide()
+        Desktop.Hide()
+    End Sub
+
+    'Placement Individual Standing Section
+
+    Private Sub IndividualToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles IndividualToolStripMenuItem3.Click
+        IndividualStanding.TopLevel = False
+        IndividualStanding.TopMost = True
+        Panel2.Controls.Add(IndividualStanding)
+        IndividualStanding.Show()
+        PictureBox3.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
+        Panel7.Hide()
+        Panel8.Hide()
+        Desktop.Hide()
+        IndividualList.Hide()
+        IndividualScoreboard.Hide()
+        Intercolliegate.Hide()
+        Player.Hide()
+        Playerreport.Hide()
+        Scoreboardreport.Hide()
+        SearchList.Hide()
+        TeamList.Hide()
+        Teamreport.Hide()
+        Teamscoreboard.Hide()
+        TeamStanding.Hide()
+        Payments.Hide()
+    End Sub
+
+    'Placement Team Standing Section
+
+    Private Sub TeamToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles TeamToolStripMenuItem3.Click
+        TeamStanding.TopLevel = False
+        TeamStanding.TopMost = True
+        Panel2.Controls.Add(TeamStanding)
+        TeamStanding.Show()
+        PictureBox3.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
+        Panel7.Hide()
+        Panel8.Hide()
+        Desktop.Hide()
+        IndividualList.Hide()
+        IndividualScoreboard.Hide()
+        Intercolliegate.Hide()
+        Player.Hide()
+        Playerreport.Hide()
+        Scoreboardreport.Hide()
+        SearchList.Hide()
+        TeamList.Hide()
+        Teamreport.Hide()
+        Teamscoreboard.Hide()
+        IndividualStanding.Hide()
+        Payments.Hide()
+    End Sub
+
+    'Individual Payment Section
+
+    Private Sub IndividualToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles IndividualToolStripMenuItem4.Click
+        Payments.TopLevel = False
+        Payments.TopMost = True
+        Panel2.Controls.Add(Payments)
+        Payments.Show()
+        PictureBox3.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
+        Panel7.Hide()
+        Panel8.Hide()
+        Desktop.Hide()
+        IndividualList.Hide()
+        IndividualScoreboard.Hide()
+        Intercolliegate.Hide()
+        Player.Hide()
+        Playerreport.Hide()
+        Scoreboardreport.Hide()
+        SearchList.Hide()
+        TeamList.Hide()
+        Teamreport.Hide()
+        Teamscoreboard.Hide()
+        IndividualStanding.Hide()
+        TeamStanding.Hide()
+    End Sub
+
+    'Scoreboard Team Scoreboard Section
+
+    Private Sub TeamToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles TeamToolStripMenuItem2.Click
+
+    End Sub
 End Class

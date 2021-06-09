@@ -31,19 +31,20 @@ Partial Class Intercolliegate
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label23 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -53,7 +54,6 @@ Partial Class Intercolliegate
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
@@ -93,6 +93,7 @@ Partial Class Intercolliegate
         '
         'Panel1
         '
+        Me.Panel1.BackColor = System.Drawing.Color.Khaki
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -105,6 +106,7 @@ Partial Class Intercolliegate
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Montserrat", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.DarkCyan
         Me.Label1.Location = New System.Drawing.Point(594, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(359, 37)
@@ -189,27 +191,16 @@ Partial Class Intercolliegate
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1059, 94)
         Me.TableLayoutPanel1.TabIndex = 7
         '
-        'Label3
+        'Label6
         '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Montserrat", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(90, 30)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(84, 33)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Open"
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Montserrat", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(360, 30)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(71, 33)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Past"
+        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Montserrat", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(852, 30)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(147, 33)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "Upcoming"
         '
         'Label5
         '
@@ -222,16 +213,27 @@ Partial Class Intercolliegate
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Ongoing"
         '
-        'Label6
+        'Label4
         '
-        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Montserrat", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(852, 30)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(147, 33)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Upcoming"
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Montserrat", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(360, 30)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(71, 33)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Past"
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Montserrat", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(90, 30)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(84, 33)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Open"
         '
         'TableLayoutPanel2
         '
@@ -259,29 +261,17 @@ Partial Class Intercolliegate
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1307, 239)
         Me.TableLayoutPanel2.TabIndex = 8
         '
-        'Label7
+        'Label10
         '
-        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Montserrat SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(436, 37)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(109, 44)
-        Me.Label7.TabIndex = 7
-        Me.Label7.Text = "May 23, 2021" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Online"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label8
-        '
-        Me.Label8.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Montserrat SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(806, 37)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(64, 44)
-        Me.Label8.TabIndex = 8
-        Me.Label8.Text = "32" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Teams"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Montserrat", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(21, 142)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(284, 74)
+        Me.Label10.TabIndex = 10
+        Me.Label10.Text = "Intercollegiate Mobile Invitational"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label9
         '
@@ -295,17 +285,29 @@ Partial Class Intercolliegate
         Me.Label9.Text = "Registration" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Open"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label10
+        'Label8
         '
-        Me.Label10.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Montserrat", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(21, 142)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(284, 74)
-        Me.Label10.TabIndex = 10
-        Me.Label10.Text = "Intercollegiate Mobile Invitational"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label8.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Montserrat SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(806, 37)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(64, 44)
+        Me.Label8.TabIndex = 8
+        Me.Label8.Text = "32" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Teams"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label7
+        '
+        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Montserrat SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(436, 37)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(109, 44)
+        Me.Label7.TabIndex = 7
+        Me.Label7.Text = "May 23, 2021" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Online"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label11
         '
@@ -377,6 +379,19 @@ Partial Class Intercolliegate
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93.0!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(1307, 378)
         Me.TableLayoutPanel3.TabIndex = 9
+        '
+        'Label23
+        '
+        Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Montserrat", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.Color.Maroon
+        Me.Label23.Location = New System.Drawing.Point(41, 294)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(245, 74)
+        Me.Label23.TabIndex = 15
+        Me.Label23.Text = "Christites Chess Chanpionship"
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label14
         '
@@ -488,19 +503,6 @@ Partial Class Intercolliegate
         Me.Label22.TabIndex = 14
         Me.Label22.Text = "Modern College Qualifiers"
         Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label23
-        '
-        Me.Label23.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Montserrat", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.Maroon
-        Me.Label23.Location = New System.Drawing.Point(41, 294)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(245, 74)
-        Me.Label23.TabIndex = 15
-        Me.Label23.Text = "Christites Chess Chanpionship"
-        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label24
         '

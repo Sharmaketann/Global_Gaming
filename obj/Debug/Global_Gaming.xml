@@ -57,6 +57,11 @@ Global_Gaming
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Global_Gaming.My.Resources.Resources.Web_1920___1_removebg_preview">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="T:Global_Gaming.GlobalDataSet">
 <summary>
 Represents a strongly typed in-memory cache of data.

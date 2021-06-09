@@ -47,16 +47,27 @@ Partial Class Home
         Me.MobileToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndoorToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.OutdoorToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DataReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TournamentEntryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewTournamentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IntercolliegateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PlacementsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StandingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IndividualToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TeamToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndividualToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TeamToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ScoreBoardToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IndividualToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TeamToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PaymentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IndividualToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TeamToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -64,21 +75,19 @@ Partial Class Home
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -86,19 +95,17 @@ Partial Class Home
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.Panel7.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.Panel6.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel4.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -163,7 +170,7 @@ Partial Class Home
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.LightSteelBlue
         Me.MenuStrip1.Font = New System.Drawing.Font("Montserrat", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PlayerEntryInformationToolStripMenuItem, Me.TournamentGamesToolStripMenuItem, Me.ScoreboardToolStripMenuItem, Me.TournamentEntryToolStripMenuItem, Me.PlacementsToolStripMenuItem, Me.LogoutToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PlayerEntryInformationToolStripMenuItem, Me.TournamentGamesToolStripMenuItem, Me.ScoreboardToolStripMenuItem, Me.TournamentEntryToolStripMenuItem, Me.PlacementsToolStripMenuItem, Me.LogoutToolStripMenuItem, Me.PaymentsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 27)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1434, 26)
@@ -238,7 +245,7 @@ Partial Class Home
         '
         'ScoreboardToolStripMenuItem
         '
-        Me.ScoreboardToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DesktopToolStripMenuItem1, Me.MobileToolStripMenuItem1, Me.IndoorToolStripMenuItem1, Me.OutdoorToolStripMenuItem1, Me.DataReportToolStripMenuItem})
+        Me.ScoreboardToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DesktopToolStripMenuItem1, Me.MobileToolStripMenuItem1, Me.IndoorToolStripMenuItem1, Me.OutdoorToolStripMenuItem1})
         Me.ScoreboardToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ScoreboardToolStripMenuItem.Name = "ScoreboardToolStripMenuItem"
         Me.ScoreboardToolStripMenuItem.Size = New System.Drawing.Size(100, 22)
@@ -248,7 +255,7 @@ Partial Class Home
         '
         Me.DesktopToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem, Me.TeamToolStripMenuItem})
         Me.DesktopToolStripMenuItem1.Name = "DesktopToolStripMenuItem1"
-        Me.DesktopToolStripMenuItem1.Size = New System.Drawing.Size(161, 22)
+        Me.DesktopToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.DesktopToolStripMenuItem1.Text = "Desktop"
         '
         'IndividualToolStripMenuItem
@@ -266,26 +273,20 @@ Partial Class Home
         'MobileToolStripMenuItem1
         '
         Me.MobileToolStripMenuItem1.Name = "MobileToolStripMenuItem1"
-        Me.MobileToolStripMenuItem1.Size = New System.Drawing.Size(161, 22)
+        Me.MobileToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.MobileToolStripMenuItem1.Text = "Mobile"
         '
         'IndoorToolStripMenuItem1
         '
         Me.IndoorToolStripMenuItem1.Name = "IndoorToolStripMenuItem1"
-        Me.IndoorToolStripMenuItem1.Size = New System.Drawing.Size(161, 22)
+        Me.IndoorToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.IndoorToolStripMenuItem1.Text = "Indoor"
         '
         'OutdoorToolStripMenuItem1
         '
         Me.OutdoorToolStripMenuItem1.Name = "OutdoorToolStripMenuItem1"
-        Me.OutdoorToolStripMenuItem1.Size = New System.Drawing.Size(161, 22)
+        Me.OutdoorToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
         Me.OutdoorToolStripMenuItem1.Text = "Outdoor"
-        '
-        'DataReportToolStripMenuItem
-        '
-        Me.DataReportToolStripMenuItem.Name = "DataReportToolStripMenuItem"
-        Me.DataReportToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.DataReportToolStripMenuItem.Text = "Data Report"
         '
         'TournamentEntryToolStripMenuItem
         '
@@ -310,10 +311,30 @@ Partial Class Home
         '
         'PlacementsToolStripMenuItem
         '
+        Me.PlacementsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StandingsToolStripMenuItem})
         Me.PlacementsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.PlacementsToolStripMenuItem.Name = "PlacementsToolStripMenuItem"
         Me.PlacementsToolStripMenuItem.Size = New System.Drawing.Size(102, 22)
         Me.PlacementsToolStripMenuItem.Text = "Placements"
+        '
+        'StandingsToolStripMenuItem
+        '
+        Me.StandingsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem3, Me.TeamToolStripMenuItem3})
+        Me.StandingsToolStripMenuItem.Name = "StandingsToolStripMenuItem"
+        Me.StandingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StandingsToolStripMenuItem.Text = "Standings"
+        '
+        'IndividualToolStripMenuItem3
+        '
+        Me.IndividualToolStripMenuItem3.Name = "IndividualToolStripMenuItem3"
+        Me.IndividualToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
+        Me.IndividualToolStripMenuItem3.Text = "Individual"
+        '
+        'TeamToolStripMenuItem3
+        '
+        Me.TeamToolStripMenuItem3.Name = "TeamToolStripMenuItem3"
+        Me.TeamToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
+        Me.TeamToolStripMenuItem3.Text = "Team"
         '
         'LogoutToolStripMenuItem
         '
@@ -326,40 +347,118 @@ Partial Class Home
         'IndividualToolStripMenuItem1
         '
         Me.IndividualToolStripMenuItem1.Name = "IndividualToolStripMenuItem1"
-        Me.IndividualToolStripMenuItem1.Size = New System.Drawing.Size(157, 22)
+        Me.IndividualToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.IndividualToolStripMenuItem1.Text = "Individual"
         '
         'TeamToolStripMenuItem1
         '
         Me.TeamToolStripMenuItem1.Name = "TeamToolStripMenuItem1"
-        Me.TeamToolStripMenuItem1.Size = New System.Drawing.Size(157, 22)
+        Me.TeamToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.TeamToolStripMenuItem1.Text = "Team"
         '
         'ScoreBoardToolStripMenuItem1
         '
+        Me.ScoreBoardToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem2, Me.TeamToolStripMenuItem2})
         Me.ScoreBoardToolStripMenuItem1.Name = "ScoreBoardToolStripMenuItem1"
-        Me.ScoreBoardToolStripMenuItem1.Size = New System.Drawing.Size(157, 22)
+        Me.ScoreBoardToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ScoreBoardToolStripMenuItem1.Text = "ScoreBoard"
+        '
+        'IndividualToolStripMenuItem2
+        '
+        Me.IndividualToolStripMenuItem2.Name = "IndividualToolStripMenuItem2"
+        Me.IndividualToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.IndividualToolStripMenuItem2.Text = "Individual"
+        '
+        'TeamToolStripMenuItem2
+        '
+        Me.TeamToolStripMenuItem2.Name = "TeamToolStripMenuItem2"
+        Me.TeamToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.TeamToolStripMenuItem2.Text = "Team"
+        '
+        'PaymentsToolStripMenuItem
+        '
+        Me.PaymentsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem4, Me.TeamToolStripMenuItem4})
+        Me.PaymentsToolStripMenuItem.Name = "PaymentsToolStripMenuItem"
+        Me.PaymentsToolStripMenuItem.Size = New System.Drawing.Size(90, 22)
+        Me.PaymentsToolStripMenuItem.Text = "Payments"
+        '
+        'IndividualToolStripMenuItem4
+        '
+        Me.IndividualToolStripMenuItem4.Name = "IndividualToolStripMenuItem4"
+        Me.IndividualToolStripMenuItem4.Size = New System.Drawing.Size(144, 22)
+        Me.IndividualToolStripMenuItem4.Text = "Individual"
+        '
+        'TeamToolStripMenuItem4
+        '
+        Me.TeamToolStripMenuItem4.Name = "TeamToolStripMenuItem4"
+        Me.TeamToolStripMenuItem4.Size = New System.Drawing.Size(144, 22)
+        Me.TeamToolStripMenuItem4.Text = "Team"
         '
         'Panel2
         '
         Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel2.BackColor = System.Drawing.Color.Black
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(12, Byte), Integer))
+        Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Controls.Add(Me.Label16)
         Me.Panel2.Controls.Add(Me.Panel7)
+        Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.Controls.Add(Me.Panel8)
         Me.Panel2.Controls.Add(Me.Panel6)
-        Me.Panel2.Controls.Add(Me.Panel5)
-        Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Location = New System.Drawing.Point(0, 53)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1434, 736)
         Me.Panel2.TabIndex = 4
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Aquamarine
+        Me.Panel5.Controls.Add(Me.Button4)
+        Me.Panel5.Controls.Add(Me.Label9)
+        Me.Panel5.Controls.Add(Me.Label10)
+        Me.Panel5.Location = New System.Drawing.Point(336, 102)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(188, 121)
+        Me.Panel5.TabIndex = 7
+        '
+        'Button4
+        '
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Button4.Location = New System.Drawing.Point(96, 93)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(89, 33)
+        Me.Button4.TabIndex = 2
+        Me.Button4.Text = "Next ->"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(10, 101)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(27, 16)
+        Me.Label9.TabIndex = 1
+        Me.Label9.Text = "3/6"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Montserrat", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(3, 11)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(167, 80)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "Update the scoreboard" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "which has functionalities " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "of basic DML language" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "such as" &
+    " insertion," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "update, and delete."
         '
         'Label13
         '
@@ -390,7 +489,7 @@ Partial Class Home
         Me.Panel7.Controls.Add(Me.Label3)
         Me.Panel7.Controls.Add(Me.Label2)
         Me.Panel7.Controls.Add(Me.Label4)
-        Me.Panel7.Location = New System.Drawing.Point(49, 206)
+        Me.Panel7.Location = New System.Drawing.Point(49, 247)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(730, 477)
         Me.Panel7.TabIndex = 9
@@ -447,6 +546,51 @@ Partial Class Home
         Me.Label4.TabIndex = 3
         Me.Label4.Text = resources.GetString("Label4.Text")
         '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Aquamarine
+        Me.Panel4.Controls.Add(Me.Button3)
+        Me.Panel4.Controls.Add(Me.Label7)
+        Me.Panel4.Controls.Add(Me.Label8)
+        Me.Panel4.Location = New System.Drawing.Point(186, 101)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(188, 121)
+        Me.Panel4.TabIndex = 6
+        '
+        'Button3
+        '
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Button3.Location = New System.Drawing.Point(96, 82)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(89, 37)
+        Me.Button3.TabIndex = 2
+        Me.Button3.Text = "Next ->"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(10, 99)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(27, 16)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "2/6"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Montserrat", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(3, 11)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(163, 48)
+        Me.Label8.TabIndex = 0
+        Me.Label8.Text = "Tournament games rules" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and regulations of each " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "game."
+        '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.Color.Transparent
@@ -454,10 +598,35 @@ Partial Class Home
         Me.Panel8.Controls.Add(Me.Label17)
         Me.Panel8.Controls.Add(Me.Label14)
         Me.Panel8.Controls.Add(Me.Label15)
-        Me.Panel8.Location = New System.Drawing.Point(49, 209)
+        Me.Panel8.Location = New System.Drawing.Point(46, 244)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(730, 477)
         Me.Panel8.TabIndex = 10
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Font = New System.Drawing.Font("Montserrat SemiBold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.Aqua
+        Me.Label18.Location = New System.Drawing.Point(61, 328)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(508, 116)
+        Me.Label18.TabIndex = 5
+        Me.Label18.Text = "*  FYBCA CS:GO Qualifiers." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "*  Football League 2021." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "*  Modern College Chess Qua" &
+    "lifiers." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "*  Christites Chess Invitational FYBCA | SYBCA"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Montserrat", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Label17.Location = New System.Drawing.Point(43, 238)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(336, 44)
+        Me.Label17.TabIndex = 4
+        Me.Label17.Text = "Registration Open:"
         '
         'Label14
         '
@@ -490,7 +659,7 @@ Partial Class Home
         Me.Panel6.Controls.Add(Me.Button5)
         Me.Panel6.Controls.Add(Me.Label11)
         Me.Panel6.Controls.Add(Me.Label12)
-        Me.Panel6.Location = New System.Drawing.Point(433, 20)
+        Me.Panel6.Location = New System.Drawing.Point(441, 20)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(188, 121)
         Me.Panel6.TabIndex = 8
@@ -529,104 +698,13 @@ Partial Class Home
         Me.Label12.TabIndex = 0
         Me.Label12.Text = "Ongoing, Upcoming, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Past, and Open tournaments" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "details added."
         '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.Aquamarine
-        Me.Panel5.Controls.Add(Me.Button4)
-        Me.Panel5.Controls.Add(Me.Label9)
-        Me.Panel5.Controls.Add(Me.Label10)
-        Me.Panel5.Location = New System.Drawing.Point(337, 20)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(188, 121)
-        Me.Panel5.TabIndex = 7
-        '
-        'Button4
-        '
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.Button4.Location = New System.Drawing.Point(96, 81)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(89, 37)
-        Me.Button4.TabIndex = 2
-        Me.Button4.Text = "Next ->"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(10, 99)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(27, 16)
-        Me.Label9.TabIndex = 1
-        Me.Label9.Text = "3/6"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Montserrat", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(3, 11)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(167, 80)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "Update the scoreboard" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "which has functionalities " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "of basic DML language" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "such as" &
-    " insertion," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "update, and delete."
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.Aquamarine
-        Me.Panel4.Controls.Add(Me.Button3)
-        Me.Panel4.Controls.Add(Me.Label7)
-        Me.Panel4.Controls.Add(Me.Label8)
-        Me.Panel4.Location = New System.Drawing.Point(180, 20)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(188, 121)
-        Me.Panel4.TabIndex = 6
-        '
-        'Button3
-        '
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.Button3.Location = New System.Drawing.Point(96, 81)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(89, 37)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Next ->"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(10, 99)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(27, 16)
-        Me.Label7.TabIndex = 1
-        Me.Label7.Text = "2/6"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Montserrat", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(3, 11)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(163, 48)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "Tournament games rules" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "and regulations of each " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "game."
-        '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Aquamarine
         Me.Panel3.Controls.Add(Me.Button2)
         Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.Label5)
-        Me.Panel3.Location = New System.Drawing.Point(4, 20)
+        Me.Panel3.Location = New System.Drawing.Point(4, 114)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(188, 121)
         Me.Panel3.TabIndex = 5
@@ -649,7 +727,7 @@ Partial Class Home
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(10, 99)
+        Me.Label6.Location = New System.Drawing.Point(10, 92)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(25, 16)
         Me.Label6.TabIndex = 1
@@ -682,37 +760,12 @@ Partial Class Home
         'Timer1
         '
         Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 10000
+        Me.Timer1.Interval = 5000
         '
         'Timer2
         '
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 1000
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("Montserrat", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.Label17.Location = New System.Drawing.Point(43, 238)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(336, 44)
-        Me.Label17.TabIndex = 4
-        Me.Label17.Text = "Registration Open:"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Montserrat SemiBold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.Aqua
-        Me.Label18.Location = New System.Drawing.Point(61, 328)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(508, 116)
-        Me.Label18.TabIndex = 5
-        Me.Label18.Text = "*  FYBCA CS:GO Qualifiers." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "*  Football League 2021." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "*  Modern College Chess Qua" &
-    "lifiers." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "*  Christites Chess Invitational FYBCA | SYBCA"
         '
         'Home
         '
@@ -737,16 +790,16 @@ Partial Class Home
         Me.MenuStrip1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -777,7 +830,6 @@ Partial Class Home
     Friend WithEvents MobileToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents IndoorToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents OutdoorToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents DataReportToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TournamentEntryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ViewTournamentsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents IntercolliegateToolStripMenuItem As ToolStripMenuItem
@@ -819,4 +871,12 @@ Partial Class Home
     Friend WithEvents Timer2 As Timer
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
+    Friend WithEvents IndividualToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents TeamToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents StandingsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IndividualToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents TeamToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents PaymentsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IndividualToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents TeamToolStripMenuItem4 As ToolStripMenuItem
 End Class

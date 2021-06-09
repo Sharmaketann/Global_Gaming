@@ -92,10 +92,22 @@
       <DependentUpon>CrystalReport2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Desktop.Designer.vb">
       <DependentUpon>Desktop.vb</DependentUpon>
     </Compile>
     <Compile Include="Desktop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IndividualScoreboard.Designer.vb">
@@ -104,10 +116,28 @@
     <Compile Include="IndividualScoreboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="IndividualStanding.Designer.vb">
+      <DependentUpon>IndividualStanding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualStanding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments.Designer.vb">
+      <DependentUpon>Payments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payments.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Playerreport.Designer.vb">
       <DependentUpon>Playerreport.vb</DependentUpon>
     </Compile>
     <Compile Include="Playerreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scoreboardreport.Designer.vb">
+      <DependentUpon>Scoreboardreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scoreboardreport.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Teamreport.Designer.vb">
@@ -202,6 +232,12 @@
     <Compile Include="TeamList.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TeamStanding.Designer.vb">
+      <DependentUpon>TeamStanding.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeamStanding.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CrystalReport1.rpt">
@@ -212,14 +248,30 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport2.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Desktop.resx">
       <DependentUpon>Desktop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IndividualScoreboard.resx">
       <DependentUpon>IndividualScoreboard.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IndividualStanding.resx">
+      <DependentUpon>IndividualStanding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments.resx">
+      <DependentUpon>Payments.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Playerreport.resx">
       <DependentUpon>Playerreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scoreboardreport.resx">
+      <DependentUpon>Scoreboardreport.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teamreport.resx">
       <DependentUpon>Teamreport.vb</DependentUpon>
@@ -256,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeamList.resx">
       <DependentUpon>TeamList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamStanding.resx">
+      <DependentUpon>TeamStanding.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -309,6 +364,7 @@
   <ItemGroup>
     <Content Include="Resources\chess.jpg" />
     <Content Include="Resources\console.jpg" />
+    <None Include="Resources\Web_1920___1-removebg-preview.png" />
     <None Include="Resources\toppng.com-layerunknowns-battlegrounds-png-pubg-png-battlegrounds-916x757.png" />
     <None Include="Resources\toppng.com-image-result-for-messi-png-messi-barcelona-messi-png-2018-916x1598.png" />
     <None Include="Resources\toppng.com-dota-2-logo-400x300.png" />

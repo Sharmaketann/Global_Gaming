@@ -78,7 +78,7 @@ Partial Class IndividualScoreboard
         Me.TableLayoutPanel1.Controls.Add(Me.Button4, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Button2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Button3, 0, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(963, 166)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(963, 150)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))

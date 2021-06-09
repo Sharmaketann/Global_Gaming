@@ -53,6 +53,9 @@ Partial Class Player
         Me.Label2 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -63,7 +66,10 @@ Partial Class Player
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -72,10 +78,6 @@ Partial Class Player
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -182,7 +184,7 @@ Partial Class Player
         Me.Label10.ForeColor = System.Drawing.Color.Navy
         Me.Label10.Location = New System.Drawing.Point(1120, 492)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(57, 22)
+        Me.Label10.Size = New System.Drawing.Size(62, 22)
         Me.Label10.TabIndex = 1
         Me.Label10.Text = "Reset"
         '
@@ -444,6 +446,8 @@ Partial Class Player
         Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Panel3.BackColor = System.Drawing.Color.Transparent
+        Me.Panel3.Controls.Add(Me.Button8)
+        Me.Panel3.Controls.Add(Me.Button7)
         Me.Panel3.Controls.Add(Me.Button6)
         Me.Panel3.Controls.Add(Me.Label12)
         Me.Panel3.Controls.Add(Me.Button3)
@@ -456,6 +460,42 @@ Partial Class Player
         Me.Panel3.Size = New System.Drawing.Size(1399, 578)
         Me.Panel3.TabIndex = 3
         '
+        'Button8
+        '
+        Me.Button8.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button8.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button8.Location = New System.Drawing.Point(302, 468)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(112, 46)
+        Me.Button8.TabIndex = 8
+        Me.Button8.Text = "Delete"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button7.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(34, 468)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(112, 46)
+        Me.Button7.TabIndex = 7
+        Me.Button7.Text = "Search"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(170, 468)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(112, 46)
+        Me.Button6.TabIndex = 6
+        Me.Button6.Text = "Update"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Label12
         '
         Me.Label12.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -464,7 +504,7 @@ Partial Class Player
         Me.Label12.ForeColor = System.Drawing.Color.Navy
         Me.Label12.Location = New System.Drawing.Point(1120, 492)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(57, 22)
+        Me.Label12.Size = New System.Drawing.Size(62, 22)
         Me.Label12.TabIndex = 1
         Me.Label12.Text = "Reset"
         '
@@ -524,7 +564,10 @@ Partial Class Player
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox7, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox8, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox9, 1, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.TextBox10, 1, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.TextBox11, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox12, 1, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.ComboBox3, 1, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.ComboBox4, 1, 7)
         Me.TableLayoutPanel2.Controls.Add(Me.Label15, 0, 7)
         Me.TableLayoutPanel2.Controls.Add(Me.Label16, 0, 6)
@@ -533,9 +576,6 @@ Partial Class Player
         Me.TableLayoutPanel2.Controls.Add(Me.Label19, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Label20, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label21, 0, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox11, 1, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox10, 1, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.ComboBox3, 1, 6)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(363, 16)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 8
@@ -588,6 +628,24 @@ Partial Class Player
         Me.TextBox9.Size = New System.Drawing.Size(314, 27)
         Me.TextBox9.TabIndex = 10
         '
+        'TextBox10
+        '
+        Me.TextBox10.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TextBox10.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox10.Location = New System.Drawing.Point(173, 155)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(314, 27)
+        Me.TextBox10.TabIndex = 9
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.TextBox11.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox11.Location = New System.Drawing.Point(173, 204)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(314, 27)
+        Me.TextBox11.TabIndex = 8
+        '
         'TextBox12
         '
         Me.TextBox12.Anchor = System.Windows.Forms.AnchorStyles.Left
@@ -596,6 +654,18 @@ Partial Class Player
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(314, 27)
         Me.TextBox12.TabIndex = 13
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox3.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Desktop", "Mobile", "Indoor", "Outdoor"})
+        Me.ComboBox3.Location = New System.Drawing.Point(173, 304)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(311, 30)
+        Me.ComboBox3.TabIndex = 15
         '
         'ComboBox4
         '
@@ -686,48 +756,6 @@ Partial Class Player
         Me.Label21.TabIndex = 1
         Me.Label21.Text = "Team Name:"
         '
-        'TextBox11
-        '
-        Me.TextBox11.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.TextBox11.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox11.Location = New System.Drawing.Point(173, 204)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(314, 27)
-        Me.TextBox11.TabIndex = 8
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.TextBox10.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(173, 155)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(314, 27)
-        Me.TextBox10.TabIndex = 9
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Desktop", "Mobile", "Indoor", "Outdoor"})
-        Me.ComboBox3.Location = New System.Drawing.Point(173, 304)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(311, 30)
-        Me.ComboBox3.TabIndex = 15
-        '
-        'Button6
-        '
-        Me.Button6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button6.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(363, 481)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(172, 46)
-        Me.Button6.TabIndex = 6
-        Me.Button6.Text = "Search"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'Player
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -813,4 +841,6 @@ Partial Class Player
     Friend WithEvents Label21 As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button7 As Button
 End Class
