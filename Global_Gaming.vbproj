@@ -98,6 +98,12 @@
       <DependentUpon>CrystalReport3.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Desktop.Designer.vb">
       <DependentUpon>Desktop.vb</DependentUpon>
     </Compile>
@@ -120,6 +126,12 @@
       <DependentUpon>IndividualStanding.vb</DependentUpon>
     </Compile>
     <Compile Include="IndividualStanding.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paymentreport.Designer.vb">
+      <DependentUpon>Paymentreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paymentreport.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Payments.Designer.vb">
@@ -252,6 +264,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport3.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Desktop.resx">
       <DependentUpon>Desktop.vb</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IndividualStanding.resx">
       <DependentUpon>IndividualStanding.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paymentreport.resx">
+      <DependentUpon>Paymentreport.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payments.resx">
       <DependentUpon>Payments.vb</DependentUpon>

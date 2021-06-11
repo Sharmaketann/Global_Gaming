@@ -95,6 +95,7 @@ Partial Class Home
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.PaymentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -321,24 +322,24 @@ Partial Class Home
         '
         Me.StandingsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem3, Me.TeamToolStripMenuItem3})
         Me.StandingsToolStripMenuItem.Name = "StandingsToolStripMenuItem"
-        Me.StandingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.StandingsToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.StandingsToolStripMenuItem.Text = "Standings"
         '
         'IndividualToolStripMenuItem3
         '
         Me.IndividualToolStripMenuItem3.Name = "IndividualToolStripMenuItem3"
-        Me.IndividualToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
+        Me.IndividualToolStripMenuItem3.Size = New System.Drawing.Size(144, 22)
         Me.IndividualToolStripMenuItem3.Text = "Individual"
         '
         'TeamToolStripMenuItem3
         '
         Me.TeamToolStripMenuItem3.Name = "TeamToolStripMenuItem3"
-        Me.TeamToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
+        Me.TeamToolStripMenuItem3.Size = New System.Drawing.Size(144, 22)
         Me.TeamToolStripMenuItem3.Text = "Team"
         '
         'LogoutToolStripMenuItem
         '
-        Me.LogoutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem1, Me.TeamToolStripMenuItem1, Me.ScoreBoardToolStripMenuItem1})
+        Me.LogoutToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem1, Me.TeamToolStripMenuItem1, Me.ScoreBoardToolStripMenuItem1, Me.PaymentToolStripMenuItem})
         Me.LogoutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
         Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(105, 22)
@@ -366,13 +367,13 @@ Partial Class Home
         'IndividualToolStripMenuItem2
         '
         Me.IndividualToolStripMenuItem2.Name = "IndividualToolStripMenuItem2"
-        Me.IndividualToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.IndividualToolStripMenuItem2.Size = New System.Drawing.Size(144, 22)
         Me.IndividualToolStripMenuItem2.Text = "Individual"
         '
         'TeamToolStripMenuItem2
         '
         Me.TeamToolStripMenuItem2.Name = "TeamToolStripMenuItem2"
-        Me.TeamToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.TeamToolStripMenuItem2.Size = New System.Drawing.Size(144, 22)
         Me.TeamToolStripMenuItem2.Text = "Team"
         '
         'PaymentsToolStripMenuItem
@@ -767,6 +768,12 @@ Partial Class Home
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 1000
         '
+        'PaymentToolStripMenuItem
+        '
+        Me.PaymentToolStripMenuItem.Name = "PaymentToolStripMenuItem"
+        Me.PaymentToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PaymentToolStripMenuItem.Text = "Payment"
+        '
         'Home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -879,4 +886,5 @@ Partial Class Home
     Friend WithEvents PaymentsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents IndividualToolStripMenuItem4 As ToolStripMenuItem
     Friend WithEvents TeamToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents PaymentToolStripMenuItem As ToolStripMenuItem
 End Class

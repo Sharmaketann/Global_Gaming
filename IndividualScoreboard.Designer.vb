@@ -60,7 +60,7 @@ Partial Class IndividualScoreboard
         Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1196, 551)
+        Me.PictureBox1.Location = New System.Drawing.Point(1196, 494)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(318, 383)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -69,8 +69,7 @@ Partial Class IndividualScoreboard
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.Button5, 0, 4)
@@ -78,7 +77,7 @@ Partial Class IndividualScoreboard
         Me.TableLayoutPanel1.Controls.Add(Me.Button4, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Button2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Button3, 0, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(963, 150)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(933, 167)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -86,7 +85,7 @@ Partial Class IndividualScoreboard
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(227, 504)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(195, 442)
         Me.TableLayoutPanel1.TabIndex = 11
         '
         'Button5
@@ -95,9 +94,10 @@ Partial Class IndividualScoreboard
         Me.Button5.BackColor = System.Drawing.Color.Transparent
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(56, 428)
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(12, 373)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(114, 47)
+        Me.Button5.Size = New System.Drawing.Size(171, 47)
         Me.Button5.TabIndex = 7
         Me.Button5.Text = "CLEAR"
         Me.Button5.UseVisualStyleBackColor = False
@@ -108,9 +108,10 @@ Partial Class IndividualScoreboard
         Me.Button1.BackColor = System.Drawing.Color.Transparent
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(56, 26)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(12, 20)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 47)
+        Me.Button1.Size = New System.Drawing.Size(171, 47)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "SAVE"
         Me.Button1.UseVisualStyleBackColor = False
@@ -121,9 +122,10 @@ Partial Class IndividualScoreboard
         Me.Button4.BackColor = System.Drawing.Color.Transparent
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(56, 326)
+        Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button4.Location = New System.Drawing.Point(12, 284)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(114, 47)
+        Me.Button4.Size = New System.Drawing.Size(171, 47)
         Me.Button4.TabIndex = 6
         Me.Button4.Text = "SEARCH"
         Me.Button4.UseVisualStyleBackColor = False
@@ -134,9 +136,10 @@ Partial Class IndividualScoreboard
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(56, 126)
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button2.Location = New System.Drawing.Point(12, 108)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(114, 47)
+        Me.Button2.Size = New System.Drawing.Size(171, 47)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "UPDATE"
         Me.Button2.UseVisualStyleBackColor = False
@@ -147,9 +150,10 @@ Partial Class IndividualScoreboard
         Me.Button3.BackColor = System.Drawing.Color.Transparent
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(56, 226)
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(170, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.Button3.Location = New System.Drawing.Point(12, 196)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(114, 47)
+        Me.Button3.Size = New System.Drawing.Size(171, 47)
         Me.Button3.TabIndex = 5
         Me.Button3.Text = "DELETE"
         Me.Button3.UseVisualStyleBackColor = False
@@ -160,7 +164,7 @@ Partial Class IndividualScoreboard
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(159, 85)
+        Me.ComboBox2.Location = New System.Drawing.Point(189, 85)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(314, 30)
         Me.ComboBox2.TabIndex = 17
@@ -169,10 +173,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(63, 19)
+        Me.Label14.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label14.Location = New System.Drawing.Point(67, 15)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(90, 28)
+        Me.Label14.Size = New System.Drawing.Size(116, 37)
         Me.Label14.TabIndex = 4
         Me.Label14.Text = "Player ID:"
         '
@@ -180,10 +185,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label15.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(85, 491)
+        Me.Label15.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label15.Location = New System.Drawing.Point(93, 487)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(68, 28)
+        Me.Label15.Size = New System.Drawing.Size(90, 37)
         Me.Label15.TabIndex = 7
         Me.Label15.Text = "Points:"
         '
@@ -191,10 +197,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(89, 421)
+        Me.Label16.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(99, 417)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(64, 28)
+        Me.Label16.Size = New System.Drawing.Size(84, 37)
         Me.Label16.TabIndex = 6
         Me.Label16.Text = "Score:"
         '
@@ -202,10 +209,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(81, 354)
+        Me.Label17.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label17.Location = New System.Drawing.Point(88, 350)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(72, 28)
+        Me.Label17.Size = New System.Drawing.Size(95, 37)
         Me.Label17.TabIndex = 5
         Me.Label17.Text = "Losses:"
         '
@@ -213,10 +221,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(92, 287)
+        Me.Label18.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label18.Location = New System.Drawing.Point(104, 283)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(61, 28)
+        Me.Label18.Size = New System.Drawing.Size(79, 37)
         Me.Label18.TabIndex = 4
         Me.Label18.Text = "Draw:"
         '
@@ -224,10 +233,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label19.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(94, 220)
+        Me.Label19.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label19.Location = New System.Drawing.Point(106, 216)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(59, 28)
+        Me.Label19.Size = New System.Drawing.Size(77, 37)
         Me.Label19.TabIndex = 3
         Me.Label19.Text = "Wins:"
         '
@@ -235,10 +245,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label20.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(77, 153)
+        Me.Label20.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label20.Location = New System.Drawing.Point(83, 149)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(76, 28)
+        Me.Label20.Size = New System.Drawing.Size(100, 37)
         Me.Label20.TabIndex = 2
         Me.Label20.Text = "Games:"
         '
@@ -246,10 +257,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label21.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(30, 86)
+        Me.Label21.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label21.Location = New System.Drawing.Point(23, 82)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(123, 28)
+        Me.Label21.Size = New System.Drawing.Size(160, 37)
         Me.Label21.TabIndex = 1
         Me.Label21.Text = "Player Name:"
         '
@@ -257,7 +269,7 @@ Partial Class IndividualScoreboard
         '
         Me.TextBox6.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.TextBox6.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox6.Location = New System.Drawing.Point(159, 492)
+        Me.TextBox6.Location = New System.Drawing.Point(189, 492)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(314, 27)
         Me.TextBox6.TabIndex = 13
@@ -266,7 +278,7 @@ Partial Class IndividualScoreboard
         '
         Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.TextBox5.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox5.Location = New System.Drawing.Point(159, 422)
+        Me.TextBox5.Location = New System.Drawing.Point(189, 422)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(314, 27)
         Me.TextBox5.TabIndex = 8
@@ -275,7 +287,7 @@ Partial Class IndividualScoreboard
         '
         Me.TextBox4.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.TextBox4.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(159, 355)
+        Me.TextBox4.Location = New System.Drawing.Point(189, 355)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(314, 27)
         Me.TextBox4.TabIndex = 9
@@ -284,7 +296,7 @@ Partial Class IndividualScoreboard
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.TextBox2.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(159, 221)
+        Me.TextBox2.Location = New System.Drawing.Point(189, 221)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(314, 27)
         Me.TextBox2.TabIndex = 15
@@ -293,7 +305,7 @@ Partial Class IndividualScoreboard
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.TextBox1.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(159, 154)
+        Me.TextBox1.Location = New System.Drawing.Point(189, 154)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(314, 27)
         Me.TextBox1.TabIndex = 14
@@ -304,19 +316,18 @@ Partial Class IndividualScoreboard
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(159, 18)
+        Me.ComboBox1.Location = New System.Drawing.Point(189, 18)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(314, 30)
         Me.ComboBox1.TabIndex = 16
         '
         'TableLayoutPanel2
         '
-        Me.TableLayoutPanel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TableLayoutPanel2.BackColor = System.Drawing.Color.Transparent
         Me.TableLayoutPanel2.ColumnCount = 2
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.11881!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.88119!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666!))
         Me.TableLayoutPanel2.Controls.Add(Me.ComboBox2, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label14, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label15, 0, 7)
@@ -333,7 +344,7 @@ Partial Class IndividualScoreboard
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox2, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox1, 1, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.ComboBox1, 1, 0)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(231, 151)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(344, 145)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 8
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
@@ -344,14 +355,14 @@ Partial Class IndividualScoreboard
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(558, 542)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(560, 542)
         Me.TableLayoutPanel2.TabIndex = 10
         '
         'TextBox3
         '
         Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.TextBox3.Font = New System.Drawing.Font("Montserrat", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(159, 288)
+        Me.TextBox3.Location = New System.Drawing.Point(189, 288)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(314, 27)
         Me.TextBox3.TabIndex = 10
@@ -360,10 +371,11 @@ Partial Class IndividualScoreboard
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Poppins", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(517, 23)
+        Me.Label1.Font = New System.Drawing.Font("Poppins", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(336, 3)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(487, 48)
+        Me.Label1.Size = New System.Drawing.Size(868, 84)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Individual Scoreboard Data Entry:"
         '
@@ -382,9 +394,10 @@ Partial Class IndividualScoreboard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1519, 941)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1519, 884)
         Me.Controls.Add(Me.TableLayoutPanel1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TableLayoutPanel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

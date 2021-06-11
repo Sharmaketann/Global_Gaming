@@ -38,6 +38,8 @@
         Teamscoreboard.Hide()
         Teamreport.Hide()
         Playerreport.Hide()
+        Payments.Hide()
+        Paymentreport.Hide()
         Panel2.Show()
         PictureBox3.Visible = True
         Panel7.Visible = True
@@ -59,6 +61,8 @@
         Intercolliegate.Hide()
         SearchList.Hide()
         TeamList.Hide()
+        Payments.Hide()
+        Paymentreport.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
     End Sub
@@ -75,6 +79,8 @@
         IndividualList.Hide()
         SearchList.Hide()
         Intercolliegate.Hide()
+        Paymentreport.Hide()
+        Payments.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
         Label2.Visible = False
@@ -97,6 +103,8 @@
         Teamscoreboard.Hide()
         Intercolliegate.Hide()
         SearchList.Hide()
+        Payments.Hide()
+        Paymentreport.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
         Label2.Visible = False
@@ -118,6 +126,8 @@
         Player.Hide()
         Desktop.Hide()
         Intercolliegate.Hide()
+        Paymentreport.Hide()
+        Payments.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
     End Sub
@@ -133,8 +143,14 @@
         IndividualList.Hide()
         Player.Hide()
         TeamList.Hide()
+        Payments.Hide()
+        Paymentreport.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
     End Sub
 
 
@@ -150,6 +166,8 @@
         TeamList.Hide()
         SearchList.Hide()
         Teamscoreboard.Hide()
+        Paymentreport.Hide()
+        Payments.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
     End Sub
@@ -167,8 +185,20 @@
         TeamList.Hide()
         SearchList.Hide()
         Intercolliegate.Hide()
+        IndividualScoreboard.Hide()
+        Payments.Hide()
+        Paymentreport.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
+        Panel8.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
+        Label13.Hide()
+        Label16.Hide()
+        Timer1.Stop()
+        Timer2.Stop()
     End Sub
 
     'Scoreboard Individual Score Section
@@ -188,6 +218,11 @@
         IndividualStanding.Hide()
         PictureBox3.Visible = False
         Panel7.Visible = False
+        Panel8.Visible = False
+        Label13.Hide()
+        Label16.Hide()
+        Timer2.Stop()
+        Timer1.Stop()
     End Sub
 
     'DataReport Individual Report Section
@@ -251,6 +286,7 @@
         Panel2.Show()
         PictureBox3.Visible = True
         Panel7.Visible = True
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -337,6 +373,8 @@
         IndividualScoreboard.Hide()
         IndividualList.Hide()
         Desktop.Hide()
+        Payments.Hide()
+        Paymentreport.Hide()
     End Sub
 
     'Placement Individual Standing Section
@@ -366,6 +404,7 @@
         Teamscoreboard.Hide()
         TeamStanding.Hide()
         Payments.Hide()
+        Paymentreport.Hide()
     End Sub
 
     'Placement Team Standing Section
@@ -395,6 +434,7 @@
         Teamscoreboard.Hide()
         IndividualStanding.Hide()
         Payments.Hide()
+        Paymentreport.Hide()
     End Sub
 
     'Individual Payment Section
@@ -424,11 +464,40 @@
         Teamscoreboard.Hide()
         IndividualStanding.Hide()
         TeamStanding.Hide()
+        Paymentreport.Hide()
     End Sub
 
     'Scoreboard Team Scoreboard Section
 
     Private Sub TeamToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles TeamToolStripMenuItem2.Click
 
+    End Sub
+
+    Private Sub PaymentToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PaymentToolStripMenuItem.Click
+        Paymentreport.TopLevel = "False"
+        Paymentreport.TopMost = "true"
+        Panel2.Controls.Add(Paymentreport)
+        Paymentreport.Show()
+        Payments.Hide()
+        PictureBox3.Visible = False
+        Label2.Visible = False
+        Label3.Visible = False
+        Label4.Visible = False
+        Button1.Visible = False
+        Panel7.Hide()
+        Panel8.Hide()
+        Desktop.Hide()
+        IndividualList.Hide()
+        IndividualScoreboard.Hide()
+        Intercolliegate.Hide()
+        Player.Hide()
+        Playerreport.Hide()
+        Scoreboardreport.Hide()
+        SearchList.Hide()
+        TeamList.Hide()
+        Teamreport.Hide()
+        Teamscoreboard.Hide()
+        IndividualStanding.Hide()
+        TeamStanding.Hide()
     End Sub
 End Class

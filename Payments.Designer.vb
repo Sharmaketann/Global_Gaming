@@ -23,14 +23,13 @@ Partial Class Payments
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Payments))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -42,15 +41,20 @@ Partial Class Payments
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -107,6 +111,7 @@ Partial Class Payments
         'Panel2
         '
         Me.Panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.Controls.Add(Me.Label18)
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.ComboBox3)
         Me.Panel2.Controls.Add(Me.Label15)
@@ -134,36 +139,12 @@ Partial Class Payments
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Montserrat", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(721, 466)
+        Me.Button2.Location = New System.Drawing.Point(666, 466)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(115, 50)
+        Me.Button2.Size = New System.Drawing.Size(170, 50)
         Me.Button2.TabIndex = 54
-        Me.Button2.Text = "Save"
+        Me.Button2.Text = "Save | Print"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label17
-        '
-        Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(670, 798)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(206, 23)
-        Me.Label17.TabIndex = 53
-        Me.Label17.Text = "Global Gaming Tournament  "
-        '
-        'Label16
-        '
-        Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(568, 798)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(109, 23)
-        Me.Label16.TabIndex = 52
-        Me.Label16.Text = "Management :"
         '
         'ComboBox3
         '
@@ -244,9 +225,8 @@ Partial Class Payments
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.Label11.Location = New System.Drawing.Point(329, 323)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(76, 39)
+        Me.Label11.Size = New System.Drawing.Size(2, 39)
         Me.Label11.TabIndex = 45
-        Me.Label11.Text = "Date:"
         '
         'Label10
         '
@@ -257,9 +237,8 @@ Partial Class Payments
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.Label10.Location = New System.Drawing.Point(329, 248)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(76, 39)
+        Me.Label10.Size = New System.Drawing.Size(2, 39)
         Me.Label10.TabIndex = 44
-        Me.Label10.Text = "Date:"
         '
         'Button1
         '
@@ -267,7 +246,7 @@ Partial Class Payments
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Montserrat", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(585, 466)
+        Me.Button1.Location = New System.Drawing.Point(534, 466)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(115, 50)
         Me.Button1.TabIndex = 43
@@ -283,9 +262,8 @@ Partial Class Payments
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(329, 176)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(76, 39)
+        Me.Label9.Size = New System.Drawing.Size(2, 39)
         Me.Label9.TabIndex = 42
-        Me.Label9.Text = "Date:"
         '
         'Label8
         '
@@ -298,54 +276,6 @@ Partial Class Payments
         Me.Label8.Size = New System.Drawing.Size(134, 48)
         Me.Label8.TabIndex = 41
         Me.Label8.Text = "College:"
-        '
-        'Label7
-        '
-        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(1239, 177)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(74, 37)
-        Me.Label7.TabIndex = 40
-        Me.Label7.Text = "Date:"
-        '
-        'Label6
-        '
-        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.Right
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Poppins", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(1150, 174)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(83, 42)
-        Me.Label6.TabIndex = 39
-        Me.Label6.Text = "Date:"
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Poppins", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(35, 172)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(166, 42)
-        Me.Label5.TabIndex = 38
-        Me.Label5.Text = "Payment ID:"
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label4.Location = New System.Drawing.Point(207, 175)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 37)
-        Me.Label4.TabIndex = 31
-        Me.Label4.Text = "Payment"
         '
         'Label3
         '
@@ -393,10 +323,106 @@ Partial Class Payments
         Me.ComboBox1.Size = New System.Drawing.Size(220, 31)
         Me.ComboBox1.TabIndex = 34
         '
+        'Label17
+        '
+        Me.Label17.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.Label17.Location = New System.Drawing.Point(670, 798)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(206, 23)
+        Me.Label17.TabIndex = 53
+        Me.Label17.Text = "Global Gaming Tournament  "
+        '
+        'Label16
+        '
+        Me.Label16.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(21, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(568, 798)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(109, 23)
+        Me.Label16.TabIndex = 52
+        Me.Label16.Text = "Management :"
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Poppins", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(1150, 174)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(83, 42)
+        Me.Label6.TabIndex = 39
+        Me.Label6.Text = "Date:"
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Poppins", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(222, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(35, 172)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(166, 42)
+        Me.Label5.TabIndex = 38
+        Me.Label5.Text = "Payment ID:"
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label4.Location = New System.Drawing.Point(207, 175)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(115, 37)
+        Me.Label4.TabIndex = 31
+        Me.Label4.Text = "Payment"
+        '
         'Timer1
         '
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
+        '
+        'Label18
+        '
+        Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Montserrat", 9.749999!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(843, 486)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(106, 18)
+        Me.Label18.TabIndex = 55
+        Me.Label18.Text = "New Payment"
+        '
+        'Label7
+        '
+        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Poppins", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(1239, 177)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(74, 37)
+        Me.Label7.TabIndex = 40
+        Me.Label7.Text = "Date:"
+        '
+        'PrintDocument1
+        '
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
         '
         'Payments
         '
@@ -441,7 +467,6 @@ Partial Class Payments
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label9 As Label
@@ -457,4 +482,8 @@ Partial Class Payments
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class
