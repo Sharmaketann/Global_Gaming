@@ -135,4 +135,8 @@ Public Class Payments
         e.Graphics.DrawString("'Thanks for the Registration'", New Font("Poppins", 10, FontStyle.Bold), Brushes.Black, New Point(350, 450))
 
     End Sub
+
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+
+    End Sub
 End Class

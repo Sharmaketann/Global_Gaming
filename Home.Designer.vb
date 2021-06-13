@@ -60,6 +60,7 @@ Partial Class Home
         Me.ScoreBoardToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndividualToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TeamToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PaymentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PaymentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndividualToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TeamToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
@@ -95,7 +96,6 @@ Partial Class Home
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.PaymentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -223,25 +223,25 @@ Partial Class Home
         'DesktopToolStripMenuItem
         '
         Me.DesktopToolStripMenuItem.Name = "DesktopToolStripMenuItem"
-        Me.DesktopToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.DesktopToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DesktopToolStripMenuItem.Text = "Desktop"
         '
         'MobileToolStripMenuItem
         '
         Me.MobileToolStripMenuItem.Name = "MobileToolStripMenuItem"
-        Me.MobileToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.MobileToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.MobileToolStripMenuItem.Text = "Mobile"
         '
         'IndoorToolStripMenuItem
         '
         Me.IndoorToolStripMenuItem.Name = "IndoorToolStripMenuItem"
-        Me.IndoorToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.IndoorToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.IndoorToolStripMenuItem.Text = "Indoor"
         '
         'OutdoorToolStripMenuItem
         '
         Me.OutdoorToolStripMenuItem.Name = "OutdoorToolStripMenuItem"
-        Me.OutdoorToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
+        Me.OutdoorToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.OutdoorToolStripMenuItem.Text = "Outdoor"
         '
         'ScoreboardToolStripMenuItem
@@ -256,37 +256,37 @@ Partial Class Home
         '
         Me.DesktopToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem, Me.TeamToolStripMenuItem})
         Me.DesktopToolStripMenuItem1.Name = "DesktopToolStripMenuItem1"
-        Me.DesktopToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.DesktopToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.DesktopToolStripMenuItem1.Text = "Desktop"
         '
         'IndividualToolStripMenuItem
         '
         Me.IndividualToolStripMenuItem.Name = "IndividualToolStripMenuItem"
-        Me.IndividualToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.IndividualToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.IndividualToolStripMenuItem.Text = "Individual"
         '
         'TeamToolStripMenuItem
         '
         Me.TeamToolStripMenuItem.Name = "TeamToolStripMenuItem"
-        Me.TeamToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.TeamToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.TeamToolStripMenuItem.Text = "Team"
         '
         'MobileToolStripMenuItem1
         '
         Me.MobileToolStripMenuItem1.Name = "MobileToolStripMenuItem1"
-        Me.MobileToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.MobileToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.MobileToolStripMenuItem1.Text = "Mobile"
         '
         'IndoorToolStripMenuItem1
         '
         Me.IndoorToolStripMenuItem1.Name = "IndoorToolStripMenuItem1"
-        Me.IndoorToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.IndoorToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.IndoorToolStripMenuItem1.Text = "Indoor"
         '
         'OutdoorToolStripMenuItem1
         '
         Me.OutdoorToolStripMenuItem1.Name = "OutdoorToolStripMenuItem1"
-        Me.OutdoorToolStripMenuItem1.Size = New System.Drawing.Size(135, 22)
+        Me.OutdoorToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.OutdoorToolStripMenuItem1.Text = "Outdoor"
         '
         'TournamentEntryToolStripMenuItem
@@ -322,7 +322,7 @@ Partial Class Home
         '
         Me.StandingsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.IndividualToolStripMenuItem3, Me.TeamToolStripMenuItem3})
         Me.StandingsToolStripMenuItem.Name = "StandingsToolStripMenuItem"
-        Me.StandingsToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.StandingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.StandingsToolStripMenuItem.Text = "Standings"
         '
         'IndividualToolStripMenuItem3
@@ -367,14 +367,20 @@ Partial Class Home
         'IndividualToolStripMenuItem2
         '
         Me.IndividualToolStripMenuItem2.Name = "IndividualToolStripMenuItem2"
-        Me.IndividualToolStripMenuItem2.Size = New System.Drawing.Size(144, 22)
+        Me.IndividualToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.IndividualToolStripMenuItem2.Text = "Individual"
         '
         'TeamToolStripMenuItem2
         '
         Me.TeamToolStripMenuItem2.Name = "TeamToolStripMenuItem2"
-        Me.TeamToolStripMenuItem2.Size = New System.Drawing.Size(144, 22)
+        Me.TeamToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.TeamToolStripMenuItem2.Text = "Team"
+        '
+        'PaymentToolStripMenuItem
+        '
+        Me.PaymentToolStripMenuItem.Name = "PaymentToolStripMenuItem"
+        Me.PaymentToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PaymentToolStripMenuItem.Text = "Payment"
         '
         'PaymentsToolStripMenuItem
         '
@@ -446,9 +452,9 @@ Partial Class Home
         Me.Label9.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(10, 101)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(27, 16)
+        Me.Label9.Size = New System.Drawing.Size(26, 16)
         Me.Label9.TabIndex = 1
-        Me.Label9.Text = "3/6"
+        Me.Label9.Text = "3/4"
         '
         'Label10
         '
@@ -578,9 +584,9 @@ Partial Class Home
         Me.Label7.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(10, 99)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(27, 16)
+        Me.Label7.Size = New System.Drawing.Size(26, 16)
         Me.Label7.TabIndex = 1
-        Me.Label7.Text = "2/6"
+        Me.Label7.Text = "2/4"
         '
         'Label8
         '
@@ -660,7 +666,7 @@ Partial Class Home
         Me.Panel6.Controls.Add(Me.Button5)
         Me.Panel6.Controls.Add(Me.Label11)
         Me.Panel6.Controls.Add(Me.Label12)
-        Me.Panel6.Location = New System.Drawing.Point(441, 20)
+        Me.Panel6.Location = New System.Drawing.Point(462, 20)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(188, 121)
         Me.Panel6.TabIndex = 8
@@ -685,9 +691,9 @@ Partial Class Home
         Me.Label11.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(10, 99)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(28, 16)
+        Me.Label11.Size = New System.Drawing.Size(27, 16)
         Me.Label11.TabIndex = 1
-        Me.Label11.Text = "4/6"
+        Me.Label11.Text = "4/4"
         '
         'Label12
         '
@@ -730,9 +736,9 @@ Partial Class Home
         Me.Label6.Font = New System.Drawing.Font("Montserrat SemiBold", 8.999999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(10, 92)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(25, 16)
+        Me.Label6.Size = New System.Drawing.Size(24, 16)
         Me.Label6.TabIndex = 1
-        Me.Label6.Text = "1/6"
+        Me.Label6.Text = "1/4"
         '
         'Label5
         '
@@ -767,12 +773,6 @@ Partial Class Home
         '
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 1000
-        '
-        'PaymentToolStripMenuItem
-        '
-        Me.PaymentToolStripMenuItem.Name = "PaymentToolStripMenuItem"
-        Me.PaymentToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.PaymentToolStripMenuItem.Text = "Payment"
         '
         'Home
         '

@@ -119,6 +119,7 @@ Public Class Player
             ComboBox4.Items.Add("Football")
             ComboBox4.Items.Add("Basketball")
         End If
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -190,6 +191,9 @@ Public Class Player
         MsgBox("Successful")
         connection.Close()
     End Sub
+
+
+    'Search 
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         connection = New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=Global;Integrated Security=True")

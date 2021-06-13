@@ -26,9 +26,8 @@ Partial Class Payments
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Payments))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -51,7 +50,6 @@ Partial Class Payments
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
@@ -82,32 +80,6 @@ Partial Class Payments
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Payment"
         '
-        'CheckBox2
-        '
-        Me.CheckBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Font = New System.Drawing.Font("Montserrat", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.CheckBox2.Location = New System.Drawing.Point(854, 104)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(335, 48)
-        Me.CheckBox2.TabIndex = 29
-        Me.CheckBox2.Text = "Team Application"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Montserrat", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.CheckBox1.Location = New System.Drawing.Point(158, 104)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(411, 48)
-        Me.CheckBox1.TabIndex = 28
-        Me.CheckBox1.Text = "Individual Application"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'Panel2
         '
         Me.Panel2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -132,6 +104,17 @@ Partial Class Payments
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1399, 538)
         Me.Panel2.TabIndex = 30
+        '
+        'Label18
+        '
+        Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Montserrat", 9.749999!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(843, 486)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(106, 18)
+        Me.Label18.TabIndex = 55
+        Me.Label18.Text = "New Payment"
         '
         'Button2
         '
@@ -388,17 +371,6 @@ Partial Class Payments
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1000
         '
-        'Label18
-        '
-        Me.Label18.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Montserrat", 9.749999!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(843, 486)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(106, 18)
-        Me.Label18.TabIndex = 55
-        Me.Label18.Text = "New Payment"
-        '
         'Label7
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.Right
@@ -433,8 +405,6 @@ Partial Class Payments
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -457,8 +427,6 @@ Partial Class Payments
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBox2 As ComboBox

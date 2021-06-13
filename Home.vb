@@ -500,4 +500,8 @@
         IndividualStanding.Hide()
         TeamStanding.Hide()
     End Sub
+
+    Private Sub PaymentsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PaymentsToolStripMenuItem.Click
+
+    End Sub
 End Class

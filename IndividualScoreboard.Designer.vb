@@ -60,7 +60,7 @@ Partial Class IndividualScoreboard
         Me.PictureBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1196, 494)
+        Me.PictureBox1.Location = New System.Drawing.Point(1196, 551)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(318, 383)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -77,7 +77,7 @@ Partial Class IndividualScoreboard
         Me.TableLayoutPanel1.Controls.Add(Me.Button4, 0, 3)
         Me.TableLayoutPanel1.Controls.Add(Me.Button2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Button3, 0, 2)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(933, 167)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(933, 195)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -344,7 +344,7 @@ Partial Class IndividualScoreboard
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox2, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox1, 1, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.ComboBox1, 1, 0)
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(344, 145)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(344, 173)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 8
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5!))
@@ -395,7 +395,7 @@ Partial Class IndividualScoreboard
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1519, 884)
+        Me.ClientSize = New System.Drawing.Size(1519, 941)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TableLayoutPanel2)
